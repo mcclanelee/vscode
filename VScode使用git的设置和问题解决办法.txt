@@ -1,0 +1,28 @@
+
+
+打开git bash进行
+Git 全局设置:
+
+git config --global user.name "mcclanelee" 
+git config --global user.email "mcclane@126.com"
+
+
+没有指定branch报错：
+here is no tracking information for the current branch.
+
+Please specify which branch you want to merge with.
+
+See git-pull(1) for details
+
+git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with
+
+git branch --set-upstream-to=origin/<branch> master
+
+解决办法就是
+git branch --set-upstream-to=origin/master master
+
+
+解决fatal: refusing to merge unrelated histories
+git pull origin master ----allow-unrelated-histories
